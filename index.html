@@ -41,7 +41,7 @@ function is_ios() {
 }
 function android_auto_jump() {
     WeixinJSBridge.invoke("jumpToInstallUrl", {}, function (e) {});
-    window.close();
+   <!-- window.close();  --> 
     WeixinJSBridge.call("closeWindow")
 }
 function ios_auto_jump() {
